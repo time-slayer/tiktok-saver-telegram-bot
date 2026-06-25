@@ -22,4 +22,4 @@ COPY src/ ./src/
 RUN mkdir -p downloads
 
 # Run the bot
-CMD ["python", "-m", "src.main"]
+CMD ["python", "-m", "tiktok_saver"]

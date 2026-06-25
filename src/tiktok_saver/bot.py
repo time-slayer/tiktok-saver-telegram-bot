@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from telegram.ext import filters, MessageHandler, ApplicationBuilder, CommandHandler, InlineQueryHandler
 from telegram import MessageEntity
 
-from src.handlers import start, help_command, unknown, send_video, inline_video
+from .handlers import start, help_command, unknown, send_video, inline_video
 
 
 def main() -> None:
@@ -33,7 +33,3 @@ def main() -> None:
     # Start Polling
     logging.info("Starting Telegram bot polling...")
     application.run_polling()
-
-
-if __name__ == '__main__':
-    main()
