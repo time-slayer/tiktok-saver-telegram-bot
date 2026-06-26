@@ -13,8 +13,7 @@ RUN apt update && apt install -y ffmpeg \
 # Copy the bot code directory
 COPY src/ ./src/
 
-# Copy requirements and install Python dependencies
-COPY requirements.txt .
+# Copy pyproject.toml and install Python dependencies
 COPY pyproject.toml .
 RUN pip install --no-cache-dir .
 
