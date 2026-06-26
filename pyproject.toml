@@ -1,0 +1,8 @@
+[project]
+name = "tiktok-saver-bot"
+version = "0.1.0"
+dependencies = [
+    "python-telegram-bot>=22.8",
+    "python-dotenv>=1.2.2",
+    "yt-dlp>=2026.6.9",
+]
