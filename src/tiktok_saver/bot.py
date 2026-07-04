@@ -11,18 +11,12 @@ from telegram.ext import (
 from telegram import MessageEntity
 
 from .handlers import start, help_command, unknown, send_video, inline_video
+from .config import BOT_TOKEN
 
 
 def main() -> None:
-    # Load env variables
-    load_dotenv()
-    bot_token = os.getenv("BOT_TOKEN")
-    if not bot_token:
-        logging.critical("BOT_TOKEN environment variable is missing")
-        return
-
     # Build Application
-    app = ApplicationBuilder().token(bot_token).build()
+    app = ApplicationBuilder().token(BOT_TOKEN).build()
 
     # Register Command Handlers
     app.add_handler(CommandHandler("start", start))
