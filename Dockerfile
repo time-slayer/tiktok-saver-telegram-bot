@@ -21,4 +21,4 @@ RUN pip install --no-cache-dir .
 RUN mkdir -p downloads
 
 # Run the bot
-CMD ["python", "-m", "tiktok_saver"]
+CMD ["python", "-m", "clean_video_dl"]

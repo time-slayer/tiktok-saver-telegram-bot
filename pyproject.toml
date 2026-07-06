@@ -1,5 +1,5 @@
 [project]
-name = "tiktok-saver-bot"
+name = "clean-video-dl-bot"
 version = "0.1.0"
 requires-python = ">= 3.14"
 dependencies = [
